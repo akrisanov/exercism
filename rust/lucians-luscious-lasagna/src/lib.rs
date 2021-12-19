@@ -11,7 +11,7 @@ pub fn remaining_minutes_in_oven(actual_minutes_in_oven: i32) -> i32 {
 }
 
 pub fn preparation_time_in_minutes(number_of_layers: i32) -> i32 {
-    // each layer takes you 2 minutes to prepare
+    //! Each layer takes you 2 minutes to prepare.
     number_of_layers * 2
 }
 
