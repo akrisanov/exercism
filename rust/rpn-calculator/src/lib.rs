@@ -1,4 +1,4 @@
-#[derive(Debug, Copy, Clone)]
+#[derive(Debug)]
 pub enum CalculatorInput {
     Add,
     Subtract,
@@ -10,9 +10,9 @@ pub enum CalculatorInput {
 pub fn evaluate(inputs: &[CalculatorInput]) -> Option<i32> {
     let mut evaluation: Vec<i32> = Vec::new();
 
-    for &input in inputs {
+    for input in inputs {
         match input {
-            CalculatorInput::Value(number) => evaluation.push(number),
+            CalculatorInput::Value(number) => evaluation.push(*number),
             _ => {
                 let snd = evaluation.pop()?;
                 let fst = evaluation.pop()?;
