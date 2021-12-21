@@ -1,6 +1,7 @@
 import unittest
+
 import pytest
-from arcade_game import eat_ghost, score, lose, win
+from arcade_game import eat_ghost, lose, score, win
 
 
 class GhostGobbleGameTest(unittest.TestCase):

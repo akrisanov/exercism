@@ -1,6 +1,7 @@
 import unittest
+
 import pytest
-from strings import add_prefix_un, make_word_groups, remove_suffix_ness, noun_to_verb
+from strings import add_prefix_un, make_word_groups, noun_to_verb, remove_suffix_ness
 
 
 class LittleSistersVocabTest(unittest.TestCase):

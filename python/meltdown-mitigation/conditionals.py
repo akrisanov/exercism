@@ -1,6 +1,7 @@
 """ Meltdown Mitigation exercise """
 from typing import Union
 
+
 Number = Union[int, float]
 
 
@@ -51,12 +52,11 @@ def reactor_efficiency(
 
     if efficiency >= 80:
         return "green"
-    elif 60 <= efficiency < 80:
+    if 60 <= efficiency < 80:
         return "orange"
-    elif 30 <= efficiency < 60:
+    if 30 <= efficiency < 60:
         return "red"
-    else:
-        return "black"
+    return "black"
 
 
 def fail_safe(
@@ -78,7 +78,6 @@ def fail_safe(
 
     if value < threshold * 0.9:
         return "LOW"
-    elif threshold - threshold * 0.1 <= value <= threshold + threshold * 0.1:
+    if threshold - threshold * 0.1 <= value <= threshold + threshold * 0.1:
         return "NORMAL"
-    else:
-        return "DANGER"
+    return "DANGER"

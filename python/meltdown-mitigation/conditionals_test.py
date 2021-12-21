@@ -1,6 +1,7 @@
 import unittest
+
 import pytest
-from conditionals import is_criticality_balanced, reactor_efficiency, fail_safe
+from conditionals import fail_safe, is_criticality_balanced, reactor_efficiency
 
 
 class MeltdownMitigationTest(unittest.TestCase):
